@@ -3,8 +3,9 @@
 Use this application to generate tints and shades for your chosen color.
 
 ---
-![screencapture-localhost-3001-my-profile-2023-03-11-20_08_10](https://user-images.githubusercontent.com/69452516/224502077-767d382b-de49-4dd6-a0ac-4df6a568a15c.png)
+![screencapture-localhost-3001-2023-03-11-20_51_34](https://user-images.githubusercontent.com/69452516/224504016-4f7b8f24-1c2c-4643-8d5b-c69a581de1b8.png)
 ---
+
 
 ## Live app - for use
 
