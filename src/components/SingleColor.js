@@ -1,20 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import rgbToHex from "../utils/utils";
 
 const SingleColor = (props) => {
   const { rgb, weight, lightColor } = props;
-  const [alert, setAlert] = useState(false);
   const rgbCodes = rgb.join(",");
-  console.log(rgbCodes);
 
   const hex = rgbToHex(...rgbCodes);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAlert(false);
-    }, 3000);
-    return () => clearTimeout(timeout);
-  }, [alert]);
   return (
     <div
       className={`${+weight === 0 ? "tab-highlight" : null} tab`}
@@ -23,13 +17,12 @@ const SingleColor = (props) => {
         color: `${lightColor ? "#fff" : "#333"}`,
       }}
       onClick={() => {
-        setAlert(true);
+        toast.success(`${hex}: Copied to clipboard!`);
         navigator.clipboard.writeText(hex);
       }}
     >
       <p className="percent-value">{weight}%</p>
       <p className="color-value">{hex}</p>
-      {alert && <p className="alert">copied to clipboard</p>}
     </div>
   );
 };
