@@ -14,6 +14,7 @@ function App() {
       let colors = new Values(color).all(10);
       setList(colors);
       setError(false);
+      toast.success("Tints and Shades generated!");
     } catch (err) {
       setError(true);
       toast.error("Invalid input: Check input and try again.");
