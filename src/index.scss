@@ -78,6 +78,14 @@ h2 {
       padding: 1rem 2rem;
       border: solid 1px #ddd;
       border-radius: 3px;
+      font-size: 1.7rem;
+      font-family: inherit;
+      font-weight: 400;
+      color: #2c620b;
+
+      &::placeholder {
+        color: #b5b5b5;
+      }
     }
   }
 }
