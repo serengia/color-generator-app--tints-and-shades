@@ -6,8 +6,9 @@ import rgbToHex from "../utils/utils";
 const SingleColor = (props) => {
   const { rgb, weight, lightColor } = props;
   const rgbCodes = rgb.join(",");
-
-  const hex = rgbToHex(...rgbCodes);
+  console.log("CHECK CHECK RGB", rgb);
+  const [r, g, b] = rgb;
+  const hex = rgbToHex(r, g, b);
 
   return (
     <div

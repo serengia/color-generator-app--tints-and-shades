@@ -108,13 +108,14 @@ h2 {
   &::before {
     content: "";
     position: absolute;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgba(172, 255, 47, 0.451);
+    width: 3rem;
+    height: 3rem;
+    background-color: #ffffff4e;
     border: solid 1px #fff;
     right: 0;
     bottom: 0;
     transform: translate(4px, 4px);
+    clip-path: polygon(100% 0, 1% 100%, 100% 100%);
   }
 }
 
