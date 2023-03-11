@@ -2,6 +2,10 @@
 
 Use this application to generate tints and shades for your chosen color.
 
+## Live app - for use
+
+[View live web app](https://serecode-color-generator.netlify.app/)
+
 ## 👥 Author
 
 👤 **James Serengia**
