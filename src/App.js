@@ -42,6 +42,7 @@ function App() {
         <section>
           <div className="form-container row">
             <h1 className="header-primary">Generate Tints and Shades</h1>
+            <p className="enter-color-code">Enter color code: eg. #539165</p>
             <div className="actions">
               <form onSubmit={handleSubmit} className="form">
                 <input
