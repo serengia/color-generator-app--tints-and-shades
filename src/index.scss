@@ -42,7 +42,7 @@ h2 {
 }
 
 .main-page {
-  padding: 6rem 0;
+  padding: 3rem 0 6rem 0;
   min-height: calc(100vh - 18rem);
 }
 
@@ -147,5 +147,21 @@ h2 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-size: 1.7rem;
+    a {
+      &:link,
+      &:visited {
+        color: #1a73e8;
+        transition: all 0.2s;
+        text-decoration: none;
+        font-weight: 600;
+        border-bottom: solid currentColor 2px;
+      }
+
+      &:hover,
+      &:active {
+        color: #0e52ab;
+      }
+    }
   }
 }

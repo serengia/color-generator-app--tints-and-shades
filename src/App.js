@@ -90,7 +90,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              James Serengia
+              James Serengia (GitHub)
             </a>
           </p>
         </div>

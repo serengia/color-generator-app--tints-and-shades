@@ -1,15 +1,14 @@
 # Color Generator App
 
-Use this application to generate tints and shades for your chosen color.
+Use this application to generate tints and shades for your chosen color. [View Live App](https://serecode-color-generator.netlify.app/)
 
 ---
-![screencapture-localhost-3001-2023-03-11-20_51_34](https://user-images.githubusercontent.com/69452516/224504016-4f7b8f24-1c2c-4643-8d5b-c69a581de1b8.png)
----
 
+## ![screencapture-serecode-color-generator-netlify-app-2023-03-11-21_19_08](https://user-images.githubusercontent.com/69452516/224505283-e6e1de7a-97f9-4cbb-9eaa-7170d7d5f214.png)
 
 ## Live app - for use
 
-[View live web app](https://serecode-color-generator.netlify.app/)
+[VIEW LIVE APP](https://serecode-color-generator.netlify.app/)
 
 ## 👥 Author
 
@@ -18,4 +17,3 @@ Use this application to generate tints and shades for your chosen color.
 - GitHub: [@serengia](https://github.com/serengia)
 - Twitter: [@jamesserengia](https://twitter.com/jamesserengia)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/james-serengia)
-
