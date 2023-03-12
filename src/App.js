@@ -13,7 +13,10 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!color) return toast.error("Input cannot be empty");
+    if (!color) {
+      setError(true);
+      return toast.error("Input cannot be empty");
+    }
     setColor(color);
     try {
       let colors = new Values(color).all(10);
@@ -63,16 +66,27 @@ function App() {
                   Generate 🎉
                 </button>
               </form>
-              <p className="issue">
-                <a
-                  href="https://github.com/serengia/color-generator-app--tints-and-shades/issues"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <MdErrorOutline className="icon" />
-                  Report an issue
-                </a>
-              </p>
+              <div className="issue-wrapper">
+                <p className="issue">
+                  <a
+                    href="https://github.com/serengia/color-generator-app--tints-and-shades/issues"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <MdErrorOutline className="icon" />
+                    Report an issue
+                  </a>
+                </p>
+                <p className="inspiration">
+                  <a
+                    href="https://colorhunt.co/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    👉 I want color inspiration
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
