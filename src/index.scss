@@ -50,6 +50,7 @@ h2 {
 .shades-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 2rem 0;
   & > * {
     flex: 1;
     height: 10rem;
@@ -107,8 +108,56 @@ h2 {
 }
 
 .tab {
-  overflow: hidden;
+  // overflow: hidden;
   cursor: pointer;
+  position: relative;
+
+  .percent-value,
+  .color-value {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    color: #4d4d4d;
+  }
+  .percent-value {
+    top: -2rem;
+  }
+
+  .color-value {
+    bottom: -2rem;
+  }
+
+  .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    .icon-wrapper {
+      background-color: rgba(255, 255, 255, 0.271);
+      padding: 0.6rem;
+      border-radius: 0.3rem;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+
+      .icon {
+        font-size: 3rem;
+      }
+
+      .icon-copy {
+        color: #fff;
+      }
+
+      .icon-copied {
+        color: #07bc0c;
+      }
+    }
+  }
 }
 
 .tab-highlight {

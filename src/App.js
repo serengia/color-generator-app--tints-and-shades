@@ -74,9 +74,7 @@ function App() {
           </div>
           <div className="shades-container row">
             {shadesList.map((color) => {
-              return (
-                <SingleColor key={color.weight} {...color} lightColor={true} />
-              );
+              return <SingleColor key={color.weight} {...color} />;
             })}
           </div>
         </section>
