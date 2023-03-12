@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { MdErrorOutline } from "react-icons/md";
 
 import Values from "values.js";
 import SingleColor from "./components/SingleColor";
@@ -62,6 +63,16 @@ function App() {
                   Generate 🎉
                 </button>
               </form>
+              <p className="issue">
+                <a
+                  href="https://github.com/serengia/color-generator-app--tints-and-shades/issues"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MdErrorOutline className="icon" />
+                  Report an issue
+                </a>
+              </p>
             </div>
           </div>
         </section>
