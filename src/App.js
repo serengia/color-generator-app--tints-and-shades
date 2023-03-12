@@ -8,8 +8,12 @@ function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
   const [list, setList] = useState(new Values("#1A73E8").all(10));
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!color) return toast.error("Input cannot be empty");
+    setColor(color);
     try {
       let colors = new Values(color).all(10);
       setList(colors);
@@ -35,8 +39,6 @@ function App() {
   const tintsList = list.slice(0, 11).reverse();
   const shadesList = list.slice(10);
 
-  console.log(tintsList, shadesList);
-
   return (
     <>
       <main className="main-page">
@@ -48,8 +50,11 @@ function App() {
               <form onSubmit={handleSubmit} className="form">
                 <input
                   type="text"
+                  name="color"
                   value={color}
-                  onChange={(e) => setColor(e.target.value)}
+                  onChange={(e) => {
+                    setColor(e.target.value);
+                  }}
                   placeholder="#1A73E8"
                   className={`${error ? "error-invalid-input" : null}`}
                 />

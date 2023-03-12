@@ -9,17 +9,14 @@ const SingleColor = (props) => {
   const [copied, setCopied] = useState(false);
   const { rgb, weight } = props;
   const rgbCodes = rgb.join(",");
-  console.log("CHECK CHECK RGB", rgb);
   const [r, g, b] = rgb;
   const hex = rgbToHex(r, g, b);
 
   const tabMouseEnterHandler = () => {
-    console.log("Tab hovered");
     setTabIsHovered(true);
   };
 
   const tabMouseLeaveHandler = () => {
-    console.log("Tab UN-hovered");
     setTabIsHovered(false);
   };
 
