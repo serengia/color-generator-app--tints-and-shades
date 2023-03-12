@@ -43,7 +43,7 @@ h2 {
 
 .main-page {
   padding: 3rem 0 6rem 0;
-  min-height: calc(100vh - 18rem);
+  min-height: calc(100vh - 25rem);
 }
 
 .tint-container,
@@ -107,6 +107,10 @@ h2 {
       flex-direction: column;
       gap: 2rem;
       align-items: flex-end;
+      @media (max-width: 780px) {
+        align-items: flex-start;
+      }
+
       .issue {
         a {
           &:link,
@@ -140,6 +144,9 @@ h2 {
     align-self: flex-start;
     display: flex;
     gap: 1rem;
+    @media (max-width: 400px) {
+      flex-wrap: wrap;
+    }
     input {
       padding: 1rem 2rem;
       border: solid 1px #ddd;
@@ -148,6 +155,11 @@ h2 {
       font-family: inherit;
       font-weight: 400;
       color: #2c620b;
+
+      @media (max-width: 500px) {
+        font-size: 1.6rem;
+        padding: 0.5rem 1rem;
+      }
 
       &::placeholder {
         color: #b5b5b5;
@@ -166,6 +178,10 @@ h2 {
   font-size: 1.6rem;
   border-radius: 3px;
   transform: all 0.3s;
+
+  @media (max-width: 500px) {
+    padding: 0.5rem 1rem;
+  }
 
   &:hover {
     background-color: #589e2c;
@@ -267,11 +283,16 @@ h2 {
   border-top: 1px solid #ddd;
   display: flex;
   align-items: center;
+
   p {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
     font-size: 1.7rem;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
     a {
       &:link,
       &:visited {

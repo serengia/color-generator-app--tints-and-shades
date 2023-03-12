@@ -83,7 +83,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    👉 I want color inspiration
+                    👉 I need color inspiration
                   </a>
                 </p>
               </div>
