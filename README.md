@@ -3,8 +3,7 @@
 Use this application to generate tints and shades for your chosen color. [View Live App](https://serecode-color-generator.netlify.app/)
 
 ---
-
-## ![screencapture-serecode-color-generator-netlify-app-2023-03-11-21_19_08](https://user-images.githubusercontent.com/69452516/224505283-e6e1de7a-97f9-4cbb-9eaa-7170d7d5f214.png)
+![screencapture-serecode-color-generator-netlify-app-2023-03-13-04_15_51](https://user-images.githubusercontent.com/69452516/224587333-0239a7cf-6991-4d30-ba41-233c27534a65.png)
 
 ---
 
